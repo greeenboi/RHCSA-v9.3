@@ -111,6 +111,8 @@ We are given 2 nodes (servera, serverb)
 
 # Selinux / Web server config
 
+![[Pasted image 20241111144501.png]]
+
 #### Commands
 1)  configure http port to use port 82
 ```sh 
@@ -223,6 +225,8 @@ Adding shared directory and adding permissions for a common directory within the
 ```sh
 	systemctl restart autofs
 ```
+
+![[Pasted image 20241111144522.png]]
 
 # Cron Jobs
 
