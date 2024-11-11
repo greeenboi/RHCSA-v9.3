@@ -169,3 +169,33 @@ We are given 2 nodes (servera, serverb)
 
 ![[Recording 20241111123804.webm]]
 
+# Create Collaborative Directory
+
+#### Configuration
+1) Group ownership of /common/admin is admin.
+
+2) The directory should be readable, writable and accessible to members of admin, but not to any other user. 
+   (It is understood that root has access to all files and directories on the system.)
+
+3) Files created in /common/admin automatically have group ownership set to the admin group.
+
+#### Commands
+
+Adding shared directory and adding permissions for a common directory within the admin grp
+   ```sh
+	mkdir -p /common/admin/
+	
+	chgrp admin /common/admin/
+	
+	chmod 770 /common/admin/
+	chmod g+s /common/admin/
+	
+	ls -ld /common/admin/
+
+	su - harry
+	touch /common/admin/file.txt
+	ls -la /common/admin/file.txt
+```
+
+# AutoFS for Automounting shared Directory
+
