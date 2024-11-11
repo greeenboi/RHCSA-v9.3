@@ -287,3 +287,15 @@ Adding shared directory and adding permissions for a common directory within the
 ```
 
 ![[Recording 20241111143833.webm]]
+
+# Find a String
+
+> Find a string `home` in `/etc/passwd` and searching string as been stored in `/root/search.txt`
+
+#### Commands
+```
+	grep "home" /etc/passwd > /root/search.txt
+	nano search.txt
+```
+
+![[Recording 20241111144331.webm]]
