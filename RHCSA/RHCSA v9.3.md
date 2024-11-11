@@ -315,3 +315,29 @@ Adding shared directory and adding permissions for a common directory within the
 ```
 
 ![[Recording 20241111144737.webm]]
+
+# Create a tar archive
+
+> 1) Backup the `/var/tmp` as `/root/test.tar.gz` using gzip
+> 2) Backup the `/var/tmp` as `/root/test.tar.bz` using bzip
+> - zcvf
+> - jvcf
+
+#### Commands
+1)  install dependencies
+   ```sh
+	dnf install gzip bzip2
+```
+2)  package with `tar` cmd using -zcvf
+   ```sh
+	tar -zcvf /root/text.tar.gz /var/tmp
+	ls
+```
+3)  package with `tar` cmd using -jcvf
+   ```sh
+	tar -jcvf /root/text.tar.bz2 /var/tmp
+	ls
+```
+
+
+![[Recording 20241111145305.webm]]
