@@ -272,3 +272,18 @@ Adding shared directory and adding permissions for a common directory within the
 
 ![[Recording 20241111143339.webm]]
 
+# Locate the Files
+
+> Locate all the files owned by `sarah` and make a copy of them in the given path `/root/find.user`
+
+#### Commands
+
+```sh
+	mkdir /root/find.user
+	
+	find / -user sarah -type f -exec cp {} /root/find.user/ \;
+
+	ls -la find.user/
+```
+
+![[Recording 20241111143833.webm]]
