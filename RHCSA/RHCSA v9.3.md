@@ -341,3 +341,63 @@ Adding shared directory and adding permissions for a common directory within the
 
 
 ![[Recording 20241111145305.webm]]
+
+# 13th (Rootless container -> 12/11/2024)
+
+# Set the Permission
+
+> 1) All new creating files for user `natasha` as `-r--------` as default permission.
+> 2) All new creating directories for user `natasha` as `dr-x------` as default permission.
+
+##### Calculating Umask Value
+> format : { d rwx rwx rwx  }
+
+(q) `w--rwxrwx`
+
+```txt
+w -> 2
+rwx -> 7
+
+umask Value = 277
+```
+(q) `dr-xrw--w-`
+
+```txt
+w -> 2
+r -> 4
+x -> 1
+
+rx -> 5
+
+umask Value = 215
+```
+
+#### Commands
+
+```sh
+	su - natasha
+	
+	vim .bash_profile
+	source .bash_profile
+```
+> in .`bash_profile` find User specific environment and set to `umask 277`
+```sh
+	touch f1
+	mkdir d1
+	
+	ll
+```
+
+![[Recording 20241111150347.webm]]
+
+# Set the Password Expire Date
+
+> The password for all new users in `serverb.lab.example.com` should expires after 20 days.
+
+#### Commands
+Log out of account
+```sh
+	vim /etc/login.defs
+```
+> Find  `PASS_MAX_DAYS` change to `20`
+
