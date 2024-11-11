@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1b14a4442c16936d",
@@ -181,7 +182,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09734cafaf759870",
+  "active": "cb8db9f9b5f81078",
   "lastOpenFiles": [
     "Untitled.md",
     "RHCSA/RHCSA v9.3.md",

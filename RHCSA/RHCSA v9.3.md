@@ -223,3 +223,31 @@ Adding shared directory and adding permissions for a common directory within the
 ```sh
 	systemctl restart autofs
 ```
+
+# Cron Jobs
+
+#### Configuration
+1. The user harry must configure cron job that runs daily at 12:30 local time and execute /bin/echo "hello".
+
+2. The user harry must configure cron job that runs every 2 minutes and execute /bin/echo "hello".
+
+3. The user harry must configure cron job that runs daily at 14:23 local time and execute logger message "RHCSA EXAM TRAINING".
+
+4. The user harry must configure cron job that runs daily at 12 noon local time and execute logger message "Cheen dabak dum dim".
+5. 
+#### Commands
+1) open and edit crontab as user harry
+   ```sh
+	crontab -eu harry
+```
+2) Add the conditional cron jobs
+   ```sh
+   30 12 * * * /bin/echo "hello"
+   */2 * * * * /bin/echo "hello"
+   23 14 * * * logger user.debug "RHCSA EXAM TRAINING"
+   00 12 * * * logger user.debug "Cheen dabak dum dim"
+```
+3) List user jobs
+   ```sh
+   crontab -lu harry
+```
