@@ -11,6 +11,26 @@
             "id": "9e1cfe69886dd348",
             "type": "leaf",
             "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "0d7d7614bb532774",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "cb8db9f9b5f81078",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "RHCSA/RHCSA v9.3.md",
@@ -19,7 +39,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1b14a4442c16936d",
@@ -163,10 +183,15 @@
   },
   "active": "09734cafaf759870",
   "lastOpenFiles": [
+    "Untitled.md",
     "RHCSA/RHCSA v9.3.md",
+    "Recording 20241111141030.webm",
+    "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md",
+    "Excalidraw",
+    "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
+    "Pasted image 20241111110750.png",
     "RHCSA/Recording 20241111105521.webm",
     "Recording 20240823144955.webm",
-    "RHCSA/Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
     "Pasted image 20240728185405.png",
     "Newsletter Website.md",
     "RHCSA",
@@ -177,10 +202,8 @@
     "RHCSA/Recording 20241111115202.webm",
     "RHCSA/Recording 20241111113908.webm",
     "SRMDEI MEET REGARDING SIH.md",
-    "Untitled.md",
     "Untitled.canvas",
     "Untitled Kanban.md",
-    "Pasted image 20241111110750.png",
     "Basic App Idea.md",
     "Features.md",
     "App Workflow.md",
@@ -189,8 +212,6 @@
     "Internal Event Itinerary.md",
     "Meeting Details Fuelemy.md",
     "RHCSA/Recording 20241111110105.webm",
-    "Recording 20241111104409.webm",
-    "RHCSA/Excalidraw",
     "2024-11-11.md",
     "Pasted image 20241007183439.png",
     "Pasted image 20241007183419.png",
@@ -202,7 +223,6 @@
     "2024-09-04.md",
     "2024-08-30.md",
     "fixes.md",
-    "2024-08-28.md",
     "Pasted image 20240728191119.png",
     "Pasted image 20240728185518.png"
   ]

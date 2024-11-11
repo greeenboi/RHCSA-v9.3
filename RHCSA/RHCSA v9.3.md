@@ -199,3 +199,27 @@ Adding shared directory and adding permissions for a common directory within the
 
 # AutoFS for Automounting shared Directory
 
+
+![[Recording 20241111141030.webm]]
+
+#### Commands
+```sh
+	dnf install autofs
+	systemctl start autofs
+	systemctl enable autofs
+
+	getent passwd production5 
+	su - production5
+
+	vim /etc/auto.master
+```
+> Edit the file to add the homedir name : `/localhome`     `/etc/auto.misc`
+
+```sh
+	vim /etc/auto.misc
+```
+> Edit the file and add: `production5    -rw,soft,intr      servera.lab.example.com:/user-homes/production5`
+
+```sh
+	systemctl restart autofs
+```
