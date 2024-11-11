@@ -303,3 +303,15 @@ Adding shared directory and adding permissions for a common directory within the
 ```
 
 ![[Recording 20241111144331.webm]]
+
+# Create a User Account 
+
+> Create an user account with `Userid 1326` and user name as `alies`.
+
+#### Commands
+```sh
+	useradd -u 1326 alies
+	echo "meow ;)"
+```
+
+![[Recording 20241111144737.webm]]
