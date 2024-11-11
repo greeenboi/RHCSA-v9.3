@@ -251,3 +251,24 @@ Adding shared directory and adding permissions for a common directory within the
    ```sh
    crontab -lu harry
 ```
+
+![[Recording 20241111143027.webm]]
+
+# Configure NTP
+
+> Configure your system so that it is an NTP client of classroom.example.com
+
+```sh
+	vim /etc/chrony.conf
+```
+> remove the ntp server line (comment it) and then add
+> `server    classroom.example.com    iburst`
+
+```sh
+	systemctl restart chronyd
+	chronyc sources
+```
+
+
+![[Recording 20241111143339.webm]]
+
