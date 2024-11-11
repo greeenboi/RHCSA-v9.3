@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b04d5d7e74d2e07e",
+        "id": "63fe726ceaa9af86",
         "type": "tabs",
         "children": [
           {
-            "id": "af80c2c9e5b973ce",
+            "id": "ba2300cb2a1d4e0c",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "RHCSA/Recording 20241111105521.webm"
+                "file": "RHCSA/RHCSA v9.3.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RHCSA/Recording 20241111105521.webm",
+                "file": "RHCSA/RHCSA v9.3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RHCSA/Recording 20241111105521.webm",
+                "file": "RHCSA/RHCSA v9.3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RHCSA/Recording 20241111105521.webm"
+                "file": "RHCSA/RHCSA v9.3.md"
               }
             }
           },
@@ -158,8 +160,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "09734cafaf759870",
+  "active": "ba2300cb2a1d4e0c",
   "lastOpenFiles": [
+    "RHCSA/Recording 20241111105521.webm",
     "Recording 20240823144955.webm",
     "RHCSA/Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
     "Pasted image 20240728185405.png",
@@ -185,7 +188,6 @@
     "Internal Event Itinerary.md",
     "Meeting Details Fuelemy.md",
     "RHCSA/Recording 20241111110105.webm",
-    "RHCSA/Recording 20241111105521.webm",
     "Recording 20241111104409.webm",
     "RHCSA/Excalidraw",
     "2024-11-11.md",
