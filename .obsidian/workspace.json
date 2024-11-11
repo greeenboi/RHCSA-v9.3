@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "25cf8d4f2b9a268e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b04d5d7e74d2e07e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "af80c2c9e5b973ce",
+            "type": "leaf",
+            "state": {
+              "type": "video",
+              "state": {
+                "file": "RHCSA/Recording 20241111105521.webm"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "160e8c6b17cc4f21",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1617bc0a2df01ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09734cafaf759870",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ee515e9bea089004",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5fa89ca3a0b14534",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b14a4442c16936d",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f2b51f2616dde02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34d91dac77a06add",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "RHCSA/Recording 20241111105521.webm",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2d7178fd3267c11b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "RHCSA/Recording 20241111105521.webm",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "adbdb57fdce7afb2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "257921c3db96331c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "RHCSA/Recording 20241111105521.webm"
+              }
+            }
+          },
+          {
+            "id": "a0ebbed8bef86aea",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "publish:Publish changes...": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "09734cafaf759870",
+  "lastOpenFiles": [
+    "Recording 20240823144955.webm",
+    "RHCSA/Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
+    "Pasted image 20240728185405.png",
+    "Newsletter Website.md",
+    "RHCSA/RHCSA v9.3.md",
+    "RHCSA",
+    "New folder",
+    "RHCSA/Recording 20241111123804.webm",
+    "^702794.md",
+    "Creating.md",
+    "RHCSA/Recording 20241111115202.webm",
+    "RHCSA/Recording 20241111113908.webm",
+    "SRMDEI MEET REGARDING SIH.md",
+    "Untitled.md",
+    "Untitled.canvas",
+    "Untitled Kanban.md",
+    "Pasted image 20241111110750.png",
+    "Basic App Idea.md",
+    "Features.md",
+    "App Workflow.md",
+    "fc website plans.md",
+    "College portal details for students.md",
+    "Internal Event Itinerary.md",
+    "Meeting Details Fuelemy.md",
+    "RHCSA/Recording 20241111110105.webm",
+    "RHCSA/Recording 20241111105521.webm",
+    "Recording 20241111104409.webm",
+    "RHCSA/Excalidraw",
+    "2024-11-11.md",
+    "Pasted image 20241007183439.png",
+    "Pasted image 20241007183419.png",
+    "2024-10-07.md",
+    "2024-10-06.md",
+    "2024-09-24.md",
+    "2024-09-17.md",
+    "2024-09-16.md",
+    "Recording 20240904184428.webm",
+    "2024-09-04.md",
+    "2024-08-30.md",
+    "fixes.md",
+    "2024-08-28.md",
+    "Pasted image 20240728191119.png",
+    "Pasted image 20240728185518.png"
+  ]
+}

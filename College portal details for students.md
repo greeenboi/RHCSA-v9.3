@@ -1,0 +1,13 @@
+- Name
+- student email
+- DOB
+- House Address
+- Gender
+- Caste ??
+- 10th / 12th marks
+- CGPA ??
+- Father's name
+- Father's occupation
+- Family Income
+- Course / degree
+
