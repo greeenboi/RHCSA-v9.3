@@ -5,5 +5,7 @@
   "obsidian-wakatime",
   "obsidian-excalidraw-plugin",
   "obsidian-kanban",
-  "obsidian-git"
+  "obsidian-git",
+  "buttons",
+  "highlightr-plugin"
 ]

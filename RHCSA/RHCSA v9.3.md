@@ -63,6 +63,7 @@ We are given 2 nodes (servera, serverb)
 
 ![[Recording 20241111105521.webm]]
 
+
 # Open Workstation
 
 1) 
@@ -344,6 +345,7 @@ Adding shared directory and adding permissions for a common directory within the
 
 # 13th (Rootless container -> 12/11/2024)
 
+
 # Set the Permission
 
 > 1) All new creating files for user `natasha` as `-r--------` as default permission.
@@ -392,7 +394,7 @@ umask Value = 215
 
 # Set the Password Expire Date
 
-> The password for all new users in `serverb.lab.example.com` should expires after 20 days.
+> The password for all new users in `serverb.lab.example.com` should expires after <mark style="background: #FFF3A3A6;">20 days.</mark>
 
 #### Commands
 Log out of account
@@ -401,3 +403,14 @@ Log out of account
 ```
 > Find  `PASS_MAX_DAYS` change to `20`
 
+
+
+
+```button
+name Press ME
+type link
+action https://github.com/greeenboi
+customColor #C69E2D
+customTextColor #fff
+```
+^button-69420
