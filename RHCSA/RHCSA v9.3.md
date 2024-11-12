@@ -343,8 +343,70 @@ Adding shared directory and adding permissions for a common directory within the
 
 ![[Recording 20241111145305.webm]]
 
-# 13th (Rootless container -> 12/11/2024)
+# Configure the Rootless container as a system start-up service and mount volumes persistently
 
+#### Configuration
+
+a) Create the container as **student** user
+
+b) Run the container by using image <mark style="background: #FFF3A3A6;">admin034/monitor:latest</mark>
+
+c) Create the container as a system start-up service, While reboot it will automatically start the service without any human intervention.
+
+d) The system service should be <mark style="background: #FFF3A3A6;">container-ascii2pdf</mark>.
+
+e) The local directory <mark style="background: #FFF3A3A6;">/opt/files</mark> should be persistently mount on container’s <mark style="background: #FFF3A3A6;">/opt/incoming</mark> directory.
+
+f) The local directory <mark style="background: #FFF3A3A6;">/opt/processed</mark> should be persistently mount on container’s <mark style="background: #FFF3A3A6;">/opt/outgoing</mark> directory.
+
+>Container registry server is `docker.io`
+>Use `admin034` as username and `redhat321` as password for container registry
+
+    Note: In working of service starts, any file create/store under the /opt/files automatically creates into pdf on /opt/outgoing directory.
+> ssh into root and student and tab switch
+#### Commands
+1) in root
+```sh
+	mkdir -p /opt/files /opt/processed
+	chown student:student /opt/files /opt/processed
+
+	chmod 777 /opt/files/ /opt/processed
+	loginctl enable-linger student
+	
+	%% ssh student@172.25.250.11 %%	
+	%% ssh root@172.25.250.11 %%	
+```
+2) in root
+   ```sh
+    sudo dnf -y install podman
+    sudo dnf -y install container-tools
+	podman login docker.io
+	podman pull docker.io/admin034/monitor:latest
+
+	podman run -d --name ascii2pdf -v /opt/files:/opt/incoming/:Z -v /opt/processed:/opt/outgoing/:Z monitor:latest
+```
+
+3) in student
+```sh
+	mkdir -p .config/systemd/user
+	cd .config/systemd/user
+	podman generate systemd --name ascii2pdf --new --files
+	ls
+   
+	systemctl --user daemon-reload
+	systemctl --user start container-ascii2pdf.service
+	systemctl --user enable container-ascii2pdf.service
+	
+```
+4) in student
+```sh
+	vim /opt/files/data
+	files /opt/files/data
+	
+	files /opt/processed/data
+```
+
+![[Recording 20241112120407.webm]]
 
 # Set the Permission
 
@@ -404,6 +466,16 @@ Log out of account
 > Find  `PASS_MAX_DAYS` change to `20`
 
 
+# Assign Sudo Privilege 
+
+>Assign the Sudo Privilege for Group "admin" and Group members can administrate without any password.
+
+#### Commands
+```sh
+	vim /etc/sudoers
+```
+> Find `%wheel All=(ALL) All` and un-comment 
+> change it to -> `%admin ALL=(ALL) NOPASSWD=ALL`
 
 
 ```button
