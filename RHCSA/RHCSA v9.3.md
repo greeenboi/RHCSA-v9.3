@@ -347,6 +347,8 @@ Adding shared directory and adding permissions for a common directory within the
 
 #### Configuration
 
+![[WhatsApp Image 2024-11-12 at 12.08.54_a36b3c29.jpg]]
+
 a) Create the container as **student** user
 
 b) Run the container by using image <mark style="background: #FFF3A3A6;">admin034/monitor:latest</mark>
@@ -476,6 +478,166 @@ Log out of account
 ```
 > Find `%wheel All=(ALL) All` and un-comment 
 > change it to -> `%admin ALL=(ALL) NOPASSWD=ALL`
+
+Save n exit
+
+# Custom Welcome message on login
+
+#### Conditions
+> Configure the application RHCSA as an alies user, When login it will show the message
+> `"Welcome to Advantage Pro"`
+
+#### Commands
+1) 
+   ```sh
+	su - alies
+	vim .bash_profile
+```
+2) 
+   > Add the following line
+```vim
+	RHCSA="Welcome to Advantage Pro" 
+	echo RHCSA
+```
+3) 
+   ```sh
+ 	source .bash_profile
+```
+
+# Create a Script File
+
+#### Conditions
+
+1) Create a <mark style="background: #FFF3A3A6;">myfind</mark> script file under <mark style="background: #FFF3A3A6;">/usr/local/bin</mark> to locate files under <mark style="background: #FFF3A3A6;">/usr/share</mark> directory having size less than 1M with UID or GID .
+
+2) After executing the <mark style="background: #FFF3A3A6;">myfind</mark> script file and listed(searched) files output has to be stored in <mark style="background: #FFF3A3A6;">/root/myfiles</mark>.
+
+
+#### Commands
+```sh
+	vim /usr/local/bin/myfind
+```
+
+> add `find /usr/share -type f -size -1M > /root/myfiles`
+
+```sh
+	chmod +x /usr/local/bin/myfind
+
+	myfind
+```
+
+![[Recording 20241112124322.webm]]
+
+- [ ] If size is greater than 400k and less than 800k -> `find /usr/share -type f -size +400k   -size -800k > /root/myfiles` ![[Recording 20241112124808.webm]]
+
+
+
+# Boot Resetting
+#servera
+```sh
+	lab start boot-resetting
+```
+> Reboot system with `CTRL` + `ALT` + `DEL` or  the reboot button
+
+1) Enter Grub (RHEL Linux Rescue)
+2) Move cursor to 4th line at the end and type `rd.break` at `check net.ifnames=0 `
+3) `CTRL` + `X` to start
+4) Press enter to enter the maintenance mode
+5) 
+```sh
+   mount -o remount,rw /sysroot
+   chroot /sysroot
+   
+   passwd --stdin root
+   #Changing password for user.root
+   northate
+
+	touch /.autorelabel
+	vim /etc/ssh/sshd_config
+```
+6) **look for PermitRootLogin -> say yes**
+```vim
+	PermitRootLogin yes
+
+```
+7) <mark style="background: #FFF3A3A6;">exit and exit</mark> from <mark style="background: #FFF3A3A6;">chroot</mark> and <mark style="background: #FFF3A3A6;">maintenance</mark> mode. Reboot
+
+![[Recording 20241112144704.webm]]
+
+
+# Create swap
+
+> Create a swap partition 512MB size.
+
+#### Commands
+```sh
+	lsblk
+	fdisk /dev/vdb
+	> n
+	> 
+	> 
+	> 
+	> p
+	> +512
+	> t
+	> 82 or swap
+	> w
+	> 
+	
+	mkswap /dev/vdb1
+	vim /etc/fstab
+	# /dev/vdb1 swap swap default 0 0
+	swapon -a
+```
+
+![[Recording 20241112145817.webm]]
+
+
+# LVM config
+
+> Create one logical volume named database and it should be on datastore volume group with size 50 extent and assign the filesystem as ext3.
+	> (i) the datastore volume group extend should be 8MiB. 
+	> (ii)mount the logical volume under mount point /database.
+> 
+> Resize the logical volume size of 100 extent on /database directory.
+> 
+> Set the recommend tuned profile for your system.
+#### Commands
+
+```sh
+	lsblk
+	
+	fdisk /dev/vdc
+	> n
+	> 
+	> 
+	> 2G
+	> w
+	
+	vgcreate -s 8M datastore /dev/vdc1
+```
+```sh
+	lvcreate -l 50 -n database datastore
+
+	lsblk
+
+	mkfs.ext3 /dev/datastore/database
+
+	mkdir /education
+	vim /etc/fstab
+	#/dev/datastore/database /education   ext3 defaults 0 0
+	
+	mount -a
+	
+	lsblk
+```
+
+
+![[Recording 20241112151010.webm]]
+
+## Fell asleep, take the rest of notes for lvm and tuned from voice notes.
+
+![[Recording 20241112151555.webm]]
 
 
 ```button
