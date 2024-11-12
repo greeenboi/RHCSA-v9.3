@@ -4,43 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "65bd84383f1a4aea",
+        "id": "e5885850ff55b456",
         "type": "tabs",
         "children": [
           {
-            "id": "9e1cfe69886dd348",
+            "id": "34e709f672284386",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "0d7d7614bb532774",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "cb8db9f9b5f81078",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RHCSA/RHCSA v9.3.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -60,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -75,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -83,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -107,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RHCSA/RHCSA v9.3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -124,10 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RHCSA/RHCSA v9.3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -138,7 +123,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -146,9 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "RHCSA/RHCSA v9.3.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           },
           {
@@ -156,7 +143,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -177,32 +166,32 @@
       "audio-recorder:Start/stop recording": false,
       "publish:Publish changes...": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb8db9f9b5f81078",
+  "active": "34e709f672284386",
   "lastOpenFiles": [
+    "2024-11-11.md",
+    "2024-11-12.md",
+    "RHCSA/RHCSA v9.3.md",
+    "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md",
+    "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
     "Recording 20241111150347.webm",
     "Recording 20241111145305.webm",
-    "RHCSA/RHCSA v9.3.md",
     "Recording 20241111144737.webm",
     "Pasted image 20241111144522.png",
     "Pasted image 20241111144501.png",
     "Recording 20241111144331.webm",
     "Recording 20241111143833.webm",
     "Recording 20241111143339.webm",
-    "2024-11-11.md",
     "Recording 20241111143027.webm",
     "Untitled.md",
     "Recording 20241111141030.webm",
-    "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md",
     "Excalidraw",
-    "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
     "Pasted image 20241111110750.png",
     "RHCSA/Recording 20241111105521.webm",
-    "Recording 20240823144955.webm",
     "Pasted image 20240728185405.png",
     "Newsletter Website.md",
     "^702794.md",
