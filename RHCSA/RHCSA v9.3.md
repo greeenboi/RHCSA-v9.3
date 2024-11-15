@@ -286,7 +286,8 @@ Adding shared directory and adding permissions for a common directory within the
 ```sh
 	mkdir /root/find.user
 	
-	find / -user sarah -type f -exec cp {} /root/find.user/ \;
+	find -user sarah -type f -exec cp {} /root/find.user/ \;
+	# The  \ and ; have no space
 
 	ls -la find.user/
 ```
@@ -494,10 +495,10 @@ Save n exit
 	vim .bash_profile
 ```
 2) 
-   > Add the following line
+   > Add the following line **( you have to pass it through the variable )**
 ```vim
 	RHCSA="Welcome to Advantage Pro" 
-	echo RHCSA
+	echo $RHCSA
 ```
 3) 
    ```sh
@@ -508,7 +509,7 @@ Save n exit
 
 #### Conditions
 
-1) Create a <mark style="background: #FFF3A3A6;">myfind</mark> script file under <mark style="background: #FFF3A3A6;">/usr/local/bin</mark> to locate files under <mark style="background: #FFF3A3A6;">/usr/share</mark> directory having size less than 1M with UID or GID .
+1) Create a <mark style="background: #FFF3A3A6;">myfind</mark> script file ( name is `myfind `) under <mark style="background: #FFF3A3A6;">/usr/local/bin</mark> to locate files under <mark style="background: #FFF3A3A6;">/usr/share</mark> directory having size less than 1M with UID or GID .
 
 2) After executing the <mark style="background: #FFF3A3A6;">myfind</mark> script file and listed(searched) files output has to be stored in <mark style="background: #FFF3A3A6;">/root/myfiles</mark>.
 
@@ -539,7 +540,7 @@ Save n exit
 ```
 > Reboot system with `CTRL` + `ALT` + `DEL` or  the reboot button
 
-1) Enter Grub (RHEL Linux Rescue)
+1) Enter Grub (Select `RHEL Linux Rescue` and press E)
 2) Move cursor to 4th line at the end and type `rd.break` at `check net.ifnames=0 `
 3) `CTRL` + `X` to start
 4) Press enter to enter the maintenance mode
@@ -639,6 +640,19 @@ Save n exit
 
 ![[Recording 20241112151555.webm]]
 
+# Tuned
+
+To Check Active Tuning Profile and set it to the recommended : 
+```sh
+	dnf install tuned
+	systemctl enable --now tuned
+	tuned-adm active
+	tuned-adm list
+	tuned-adm recommend
+	tuned-adm active
+
+	tuned-adm off
+```
 
 ```button
 name Press ME

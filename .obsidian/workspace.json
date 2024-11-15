@@ -4,22 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2cf869eef9725517",
+        "id": "4addac353e3d6a4c",
         "type": "tabs",
         "children": [
           {
-            "id": "318e77845d67f9ae",
+            "id": "183c26d76c3184ef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "video",
               "state": {
-                "file": "RHCSA/RHCSA v9.3.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Recordings/Recording 20241111105521.webm"
               },
               "icon": "lucide-file",
-              "title": "RHCSA v9.3"
+              "title": "Recording 20241111105521"
             }
           }
         ]
@@ -78,8 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1b14a4442c16936d",
@@ -180,30 +176,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a0ebbed8bef86aea",
+  "active": "09734cafaf759870",
   "lastOpenFiles": [
-    "README.md",
-    "Recording 20241112151555.webm",
-    "Recording 20241112151010.webm",
-    "Recording 20241112145817.webm",
-    "Recording 20241112144704.webm",
-    "WhatsApp Image 2024-11-12 at 12.08.54_a36b3c29.jpg",
-    "Recording 20241112124808.webm",
-    "Recording 20241112124322.webm",
-    "Recording 20241112120407.webm",
-    "Untitled.canvas",
-    "RHCSA/RHCSA v9.3.md",
-    "2024-11-12.md",
-    "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
-    "2024-11-11.md",
-    "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md",
-    "Recording 20241111150347.webm",
-    "Recording 20241111145305.webm",
-    "Recording 20241111144737.webm",
-    "Pasted image 20241111144522.png",
-    "Pasted image 20241111144501.png",
+    "Recordings/Recording 20241111105521.webm",
     "Untitled.md",
-    "Pasted image 20241111110750.png",
+    "Recordings/Recording 20241111141030.webm",
+    "Images/WhatsApp Image 2024-11-12 at 12.08.54_a36b3c29.jpg",
+    "Recordings",
+    "Images/Pasted image 20241111110750.png",
+    "wakatime/2024-11-11.md",
+    "Images",
+    "RHCSA/RHCSA v9.3.md",
+    "wakatime",
+    "wakatime/2024-11-15.md",
+    "wakatime/2024-11-14.md",
+    "wakatime/2024-11-13.md",
+    "README.md",
+    "Recordings/Recording 20241112151555.webm",
+    "Recordings/Recording 20241112151010.webm",
+    "Recordings/Recording 20241112145817.webm",
+    "Recordings/Recording 20241112144704.webm",
+    "Recordings/Recording 20241112124808.webm",
+    "Recordings/Recording 20241112124322.webm",
+    "Untitled.canvas",
+    "wakatime/2024-11-12.md",
+    "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
+    "Excalidraw/Drawing 2024-11-11 14.00.05.excalidraw.md",
+    "Images/Pasted image 20241111144522.png",
+    "Images/Pasted image 20241111144501.png",
     "Pasted image 20240728185405.png",
     "Newsletter Website.md",
     "^702794.md",
@@ -222,10 +222,6 @@
     "2024-10-07.md",
     "2024-10-06.md",
     "2024-09-24.md",
-    "2024-09-17.md",
-    "2024-09-16.md",
-    "2024-09-04.md",
-    "2024-08-30.md",
     "Pasted image 20240728191119.png",
     "Pasted image 20240728185518.png"
   ]
