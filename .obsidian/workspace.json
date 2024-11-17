@@ -4,19 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4addac353e3d6a4c",
+        "id": "c1a90679147f08aa",
         "type": "tabs",
         "children": [
           {
-            "id": "183c26d76c3184ef",
+            "id": "e16ce9f3ff786cef",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "Recordings/Recording 20241111105521.webm"
+                "file": "RHCSA/RHCSA v9.3.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Recording 20241111105521"
+              "title": "RHCSA v9.3"
             }
           }
         ]
@@ -75,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1b14a4442c16936d",
@@ -176,8 +180,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "09734cafaf759870",
+  "active": "e16ce9f3ff786cef",
   "lastOpenFiles": [
+    "2024-11-17.md",
+    "RHCSA/RHCSA v9.3.md",
+    "2024-11-16.md",
     "Recordings/Recording 20241111105521.webm",
     "Untitled.md",
     "Recordings/Recording 20241111141030.webm",
@@ -186,7 +193,6 @@
     "Images/Pasted image 20241111110750.png",
     "wakatime/2024-11-11.md",
     "Images",
-    "RHCSA/RHCSA v9.3.md",
     "wakatime",
     "wakatime/2024-11-15.md",
     "wakatime/2024-11-14.md",
@@ -197,7 +203,6 @@
     "Recordings/Recording 20241112145817.webm",
     "Recordings/Recording 20241112144704.webm",
     "Recordings/Recording 20241112124808.webm",
-    "Recordings/Recording 20241112124322.webm",
     "Untitled.canvas",
     "wakatime/2024-11-12.md",
     "Excalidraw/Drawing 2024-11-11 10.34.27.excalidraw.md",
@@ -221,7 +226,6 @@
     "Pasted image 20241007183419.png",
     "2024-10-07.md",
     "2024-10-06.md",
-    "2024-09-24.md",
     "Pasted image 20240728191119.png",
     "Pasted image 20240728185518.png"
   ]
