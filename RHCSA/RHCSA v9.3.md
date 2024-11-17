@@ -609,6 +609,8 @@ Save n exit
 > Resize the logical volume size of 100 extent on /database directory.
 > 
 > Set the recommend tuned profile for your system.
+
+![[Drawing 2024-11-17 14.05.35.excalidraw]]
 #### Commands
 
 ```sh
@@ -619,6 +621,8 @@ Save n exit
 	> 
 	> 
 	> 2G
+	> t
+	> 8e or lv
 	> w
 	
 	vgcreate -s 8M datastore /dev/vdc1
