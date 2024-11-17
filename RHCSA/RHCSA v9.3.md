@@ -211,17 +211,24 @@ Adding shared directory and adding permissions for a common directory within the
 	systemctl start autofs
 	systemctl enable autofs
 
-	getent passwd production5 
-	su - production5
+	getent passwd netuser10 
 
 	vim /etc/auto.master
 ```
-> Edit the file to add the homedir name : `/localhome`     `/etc/auto.misc`
+> Edit the file to add the homedir name at the **last line** : `/localhome`     `/etc/auto.misc`
 
 ```sh
 	vim /etc/auto.misc
 ```
-> Edit the file and add: `production5    -rw,soft,intr      servera.lab.example.com:/user-homes/production5`
+> Edit the file and add: `netuser10    -rw,soft,intr      servera.lab.example.com:/user-homes/production5`
+
+| Permission     | What to add |
+| -------------- | ----------- |
+| write          | rw          |
+| read and write | rw          |
+| read alone     | r           |
+| read only      | ro          |
+
 
 ```sh
 	systemctl restart autofs
@@ -286,7 +293,7 @@ Adding shared directory and adding permissions for a common directory within the
 ```sh
 	mkdir /root/find.user
 	
-	find -user sarah -type f -exec cp {} /root/find.user/ \;
+	find / -user sarah -type f -exec cp {} /root/find.user/ \;
 	# The  \ and ; have no space
 
 	ls -la find.user/
@@ -374,22 +381,20 @@ f) The local directory <mark style="background: #FFF3A3A6;">/opt/processed</mark
 	chown student:student /opt/files /opt/processed
 
 	chmod 777 /opt/files/ /opt/processed
-	loginctl enable-linger student
-	
-	%% ssh student@172.25.250.11 %%	
-	%% ssh root@172.25.250.11 %%	
+	loginctl enable-linger student	
 ```
-2) in root
+	now ssh into student
+1) in student@serverb
    ```sh
     sudo dnf -y install podman
     sudo dnf -y install container-tools
-	podman login docker.io
-	podman pull docker.io/admin034/monitor:latest
+	podman login #mentioned registry
+	podman pull registry/admin034/monitor:latest
 
 	podman run -d --name ascii2pdf -v /opt/files:/opt/incoming/:Z -v /opt/processed:/opt/outgoing/:Z monitor:latest
 ```
 
-3) in student
+3) in student@serverb
 ```sh
 	mkdir -p .config/systemd/user
 	cd .config/systemd/user
@@ -401,7 +406,7 @@ f) The local directory <mark style="background: #FFF3A3A6;">/opt/processed</mark
 	systemctl --user enable container-ascii2pdf.service
 	
 ```
-4) in student
+4) now to test
 ```sh
 	vim /opt/files/data
 	files /opt/files/data
@@ -530,6 +535,7 @@ Save n exit
 ![[Recording 20241112124322.webm]]
 
 - [ ] If size is greater than 400k and less than 800k -> `find /usr/share -type f -size +400k   -size -800k > /root/myfiles` ![[Recording 20241112124808.webm]]
+- [ ] To Add `GID` or `UID` -> `find /usr/share -type f -perm /g+s` or `find /usr/share -type f -perm /u+s`
 
 
 
@@ -639,6 +645,14 @@ Save n exit
 ## Fell asleep, take the rest of notes for lvm and tuned from voice notes.
 
 ![[Recording 20241112151555.webm]]
+
+# Resize / Extend LV
+
+Resize the Linux volume to size btw 200Mib and 300Mib
+```sh
+	df -hT
+	lvresize -L 250M /dev/vg/lv -r /dev/mapper/vg-lv
+```
 
 # Tuned
 

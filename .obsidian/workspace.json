@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c1a90679147f08aa",
+        "id": "dce1b2ce16a9d493",
         "type": "tabs",
         "children": [
           {
-            "id": "e16ce9f3ff786cef",
+            "id": "9ed3c78051f6b3b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -156,6 +156,16 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "1881766314aac689",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
         "currentTab": 4
@@ -180,11 +190,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e16ce9f3ff786cef",
+  "active": "a0ebbed8bef86aea",
   "lastOpenFiles": [
-    "2024-11-17.md",
     "RHCSA/RHCSA v9.3.md",
-    "2024-11-16.md",
+    "wakatime/2024-11-16.md",
+    "wakatime/2024-11-17.md",
     "Recordings/Recording 20241111105521.webm",
     "Untitled.md",
     "Recordings/Recording 20241111141030.webm",
